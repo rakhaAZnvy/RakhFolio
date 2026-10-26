@@ -1,0 +1,623 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Frontend developer portfolio featuring projects, organizations, certificates, and publications."
+    />
+    <meta name="theme-color" content="#1b1a20" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="512x512" />
+    <title>Rakha Adinata Zavier - Portfolio</title>
+    <script>
+      (function () {
+        var r = document.documentElement;
+        try {
+          if (
+            sessionStorage.getItem("portfolioLoader") === "1" &&
+            !/[?&]loader\b/.test(location.search)
+          ) {
+            r.classList.add("no-loader");
+            return;
+          }
+        } catch (e) {}
+        r.classList.add("is-loading");
+      })();
+    </script>
+    <noscript
+      ><style>
+        .loader {
+          display: none;
+        }
+      </style></noscript
+    >
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/grid-bg.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/brand-typing.css" />
+    <link rel="stylesheet" href="css/about-contact.css" />
+    <link rel="stylesheet" href="css/logo-poof.css" />
+    <script src="js/loader.js" defer></script>
+    <script src="js/brand-typing.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/logo-poof.js" defer></script>
+      <script src="js/neural-bg.js" defer></script>
+  </head>
+  <body>
+    <div id="loader" class="loader" aria-label="Loading page">
+      <div class="loader-inner">
+        <div
+          class="loader-track"
+          role="progressbar"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+        >
+          <div class="loader-cat" aria-hidden="true">
+            <svg viewBox="0 0 124 70" xmlns="http://www.w3.org/2000/svg">
+              <path
+                class="cat-tail"
+                d="M26 38 C6 40 4 16 16 12"
+                fill="none"
+                stroke="#669782"
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+        
+              <rect
+                class="cat-leg leg-a"
+                x="34"
+                y="48"
+                width="7"
+                height="20"
+                rx="3.5"
+                fill="#4a7563"
+              />
+              <rect
+                class="cat-leg leg-b"
+                x="72"
+                y="48"
+                width="7"
+                height="20"
+                rx="3.5"
+                fill="#4a7563"
+              />
+              <g class="cat-body">
+                <rect x="22" y="28" width="62" height="26" rx="13" fill="#669782" />
+                <path
+                  d="M40 29 v8 M50 29 v10 M60 29 v8"
+                  stroke="#4a7563"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <polygon points="85,22 87,6 98,17" fill="#669782" />
+                <polygon points="99,16 109,7 111,25" fill="#669782" />
+                <polygon points="88,18 89,11 94,16" fill="#4a7563" />
+                <circle cx="96" cy="32" r="15" fill="#669782" />
+                <circle cx="101" cy="30" r="2.4" fill="#1b1a20" />
+                <circle cx="101.8" cy="29.2" r="0.8" fill="#f3f1ea" />
+                <circle cx="109" cy="35" r="1.8" fill="#e2593b" />
+                <path
+                  d="M108 37 L120 34 M108 39 L120 41"
+                  stroke="#669782"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                />
+              </g>
+    
+              <rect
+                class="cat-leg leg-a"
+                x="64"
+                y="48"
+                width="7"
+                height="20"
+                rx="3.5"
+                fill="#669782"
+              />
+              <rect
+                class="cat-leg leg-b"
+                x="26"
+                y="48"
+                width="7"
+                height="20"
+                rx="3.5"
+                fill="#669782"
+              />
+            </svg>
+          </div>
+          <div class="loader-fill"></div>
+        </div>
+        <p class="loader-meta">
+          <span class="loader-text">Please Wait For Something Special</span>
+          <span class="loader-percent">0%</span>
+        </p>
+      </div>
+    </div>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="index.html">Rakha Adinata Zavier Portfolio</a>
+        <div class="nav-links">
+          <a href="index.html#about">About me</a><a href="index.html#project">Project</a
+          ><a href="index.html#organization">Organization Experience</a
+          ><a href="index.html#certificate">Certificate</a
+          ><a href="index.html#publication">Publication</a
+          ><a href="index.html#contact">Contact me</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="intro">
+        <div class="intro-layout">
+          <div class="copy">
+          <p class="eyebrow">AI, TECH, AND PROGRAMMING ENTHUSIAST</p>
+          <h1>Studying and Working in Programming, AI, Data Analyst and Web Development</h1>
+          <p>
+            Hello im Rakha Adinata Zavier, a student of Computer Science (Intelligent Systems) at BINUS University. I have a passion for programming, AI, data analysis, and web development. I have experience in various projects and competitions, and I am always eager to learn and collaborate on new ideas.
+          </p>
+          <a class="button primary" href="#project">My Projects</a>
+          </div>
+          <img class="profile"
+              src="assets/Profile.png"
+              alt="Portrait of Rakha Adinata Zavier"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+        </div>
+      </section>
+      <section id="about" class="section about reveal">
+        <h2>About me</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="about-lead">
+              I am Rakha Adinata Zavier, a undergraduate student of Computer Science (Intelligent Systems) at
+              BINUS University since September 2024.
+            </p>
+            <p>
+              The courses I have studied include Machine Learning, NLP, Software Engineering,and Computer Vision. I have applied this knowledge through competitions and research, starting from AI and IoT applications that
+              that me and my friends have developed to connect communities with the recycling industry for Samsung Solve for Tomorrow Competition,
+              also me and my team have published a paper evaluating recommendation models in IEEE (ICISS 2026).
+            </p>
+            <p>
+              Now i'm a mentor in BINUS University and teaching three mentee (right now) for , and also an HRD Activist (Internal Organizer) in Bina Nusantara Computer Club
+            </p>
+            <ul class="about-stats">
+              <li><strong>3.79 / 4.00</strong><span>IPK up to semester 4</span></li>
+              <li>
+                <strong>Top 40</strong
+                ><span>Semi-finalist of Samsung Solve for Tomorrow, from 1.000+ peand</span>
+              </li>
+              <li>
+                <strong>Publication</strong><span>Published a paper in IEEE and presented it at ICISS 2026 as a co-author and presenter</span>
+              </li>
+            </ul>
+            <div class="about-actions">
+              <a class="button primary" href="https://drive.google.com/file/d/1COvPogqOeuE_ceqVHlHadTnAyLFqrnm8/view?usp=sharing" download
+                >Download CV (2 page)</a
+              >
+              <a class="button" href="#contact">Contact_Me</a>
+            </div>
+          </div>
+          <div class="about-side">
+            <article class="about-card">
+              <p class="about-card-label">Education</p>
+              <h3>BINUS University</h3>
+              <p>Undergraduate Bachelor of Computer Science, Intelligent Systems</p>
+              <p class="small">Sep 2024 - present · Tangerang, Indonesian</p>
+              <p class="small about-courses">
+                Data Structure, Database Technology, Software Engineering, Artificial Intelligence,
+                Human and Computer Interaction, Machine Learning, NLP, Computer Vision.
+              </p>
+            </article>
+            <article class="about-card">
+              <p class="about-card-label">Skills</p>
+              <div class="chip-group" style="--c: #669782">
+                <p class="chip-title">Technical</p>
+                <ul class="chips">
+                  <li>MS Office</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Java</li>
+                  <li>C</li>
+                  <li>Python</li>
+                  <li>Figma</li>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                  <li>VsCode</li>
+                  <li>Canva</li>
+                  <li>MySQL</li>
+                  <li>Machine Learning</li>
+                  <li>NLP</li>
+                  <li>Computer Vision</li>
+                  <li>Scikit-learn</li>
+                  <li>OpenCV</li>
+                  <li>Pytorch (still learning)</li>
+                  <li>Tensorflow (strill learning)</li>
+                </ul>
+              </div>
+              <div class="chip-group" style="--c: #dcc57c">
+                <p class="chip-title">Soft skills</p>
+                <ul class="chips">
+                  <li>Communication</li>
+                  <li>Leadership</li>
+                  <li>Teamwork</li>
+                </ul>
+              </div>
+              <div class="chip-group" style="--c: #b5bbbe">
+                <p class="chip-title">Languages</p>
+                <ul class="chips">
+                  <li>Indonesian (native)</li>
+                  <li>English (intermediate)</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="project" class="section slider reveal" aria-labelledby="project-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="project-title">Projects</h2>
+            <p>Swipe to explore. Select an image to enlarge it.</p>
+          </div>
+          <div class="slider-controls">
+            <button type="button" data-direction="-1" aria-label="Previous item in Project">
+              Previous</button
+            ><button type="button" data-direction="1" aria-label="Next item in Project">
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="track" tabindex="0" role="region" aria-label="Slider Project">
+          <a class="card" href="project/LokalLoop.html"
+            ><img
+              src="assets/LokalLoop.png"
+              alt="LokalLoop prototype smart waste drop box made from a foam cooler, with a keypad and sorting mechanism"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+            <div class="card-caption">
+              <h3>LokalLoop</h3>
+              <p>
+                A WhatsApp-based recycling pickup system with a smart drop box. Residents send their location and a message, an LLM reads it, and Google OR-Tools plans efficient pickup routes for collectors. Built with an ESP32 IoT box, Node.js, Python, and PostgreSQL. Created for Samsung Solve for Tomorrow.
+              </p>
+              <span class="card-link">View details</span>
+            </div></a
+          ><a class="card" href="project/SorTrash.html"
+            ><img
+              src="assets/SorTrash.png"
+              alt="SorTrash website home screen for its AI-powered waste classification app"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+            <div class="card-caption">
+              <h3>SorTrash</h3>
+              <p>
+                SorTrash was my first web development project that uses pretrained AI model (YOLO) for analyzing different types of trash, sorTrash is a web-based application that could detect the type of trash based of an image that the user inputs or takes, and also can detect it in real time using our real-time detection features.
+              </p>
+              <span class="card-link">View details</span>
+            </div></a
+          ><a class="card" href="project/VisioAttend.html"
+            ><img
+              src="./assets/Attendance_System.png"
+              alt="VisioAttend attendance system showing a webcam face-recognition window and attendance log"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+            <div class="card-caption">
+              <h3>VisioAttend</h3>
+              <p>
+                VisioAttend is a desktop attendance system created for a computer vision course. It registers students, recognizes faces through a webcam, and records daily attendance. 
+                It is built with Python, Tkinter, and OpenCV, using Haar Cascade for face detection and LBPH for face recognition.
+              </p>
+              <span class="card-link">View details</span>
+            </div></a
+          ><a class="card" href="project/CheckShop.html"
+            ><img
+              src="./assets/CheckShop.png"
+              alt="CheckShop sentiment analysis dashboard showing model predictions and comparison charts"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+            <div class="card-caption">
+              <h3>CheckShop</h3>
+              <p>
+                CheckShop was my first project to make a web with many NLP models and analyzing the NLP models to know which one model is the best for CheckShop, CheckShop is an Streamlit 
+                website application that analyzes the sentiment of English online shop reviews using four models side by side: Logistic Regression, Naive Bayes, XGBoost, and a fine-tuned BERT. 
+                After we analyze the models, the best result came from BERT with a macro F1-score of 94.4%.
+              </p>
+              <span class="card-link">View details</span>
+            </div></a>
+        </div>
+      </section>
+      <section id="organization" class="section slider reveal" aria-labelledby="organization-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="organization-title">Organization and Work Experience</h2>
+            <p>Swipe to explore organization and work experience.</p>
+          </div>
+          <div class="slider-controls">
+            <button
+              type="button"
+              data-direction="-1"
+              aria-label="Previous item in Organization Experience"
+            >
+              Previous</button
+            ><button
+              type="button"
+              data-direction="1"
+              aria-label="Next item in Organization Experience"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="track org-timeline" tabindex="0" role="region" aria-label="Timeline Organization Experience">
+          <a class="card org-entry" href="organization/Chaperone.html">
+            <div class="org-entry-content"><span class="org-date">July 2025 - September 2026</span>
+              <h3>Freshman Chaperone</h3><p>A volunteer program where I guided incoming BINUS freshmen, as Freshman Partner and
+                Leader for Binusian 2029 and Freshman Leader for Binusian 2030.</p><span class="card-link">View details</span></div>
+            <img
+              src="assets/Freshman_Chaperone.jpeg"
+              alt="Freshman Chaperone participants gathered in a classroom"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+          <a class="card org-entry" href="organization/BNCC.html">
+            <div class="org-entry-content"><span class="org-date">November 2025 - Present</span>
+              <h3>BNCC</h3><p>HRD (Internal) activist at Bina Nusantara Computer Club, helping organize internal events such as activist bonding and internal training, either than that i join and organizing some of the external events. </p><span class="card-link">View details</span></div>
+            <img
+              src="./assets/BNCC.jpg"
+              alt="BNCC members gathered outdoors at night"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+          </a><a class="card org-entry" href="organization/Events.html">
+            <div class="org-entry-content"><span class="org-date">November 2025 - Present</span>
+              <h3>BNCC External Events</h3><p>Event committee and hosting work across IIT Challenge, BNCC TechDive, and BNCC TechUp.</p><span class="card-link">View details</span></div>
+            <img
+              src="/assets/Event.png"
+              alt="BNCC event attendees gathered in a university auditorium"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+          </a><a class="card org-entry" href="organization/Sclass.html">
+            <div class="org-entry-content"><span class="org-date">January 2026 - Present</span>
+              <h3>Sclass Computer Science - UREEKA</h3><p>As a selected Computer Science student in the Sclass UREEKA track, I honed my web/app development and soft skills, leveraging this training to actively participate in multiple hackathons.</p><span class="card-link">View details</span></div>
+            <img
+              src="assets/Sclass.jpeg"
+              alt="Sclass Computer Science students working together in a classroom"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+          </a><a class="card org-entry" href="organization/Mentor.html">
+            <div class="org-entry-content"><span class="org-date">September 2026 - Present</span>
+              <h3>Scholarship Mentor</h3><p>I was selected as a Scholarship Mentor at BINUS University, a role that provides me with a scholarship to help cover my tuition fees. Currently, I guide three mentees across various academic disciplines, offering personalized support to help them master specialized courses such as Speech Recognition, Compilation Techniques, and Algorithm and Programming.</p><span class="card-link">View details</span></div>
+            <img
+              src="assets/Mentor.jpeg"
+              alt="Students taking part in a scholarship mentoring session"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            />
+          </a>
+        </div>
+      </section>
+      <section id="certificate" class="section slider reveal" aria-labelledby="certificate-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="certificate-title">Certificate</h2>
+            <p>Swipe to explore. Select an image to enlarge it.</p>
+          </div>
+          <div class="slider-controls">
+            <button type="button" data-direction="-1" aria-label="Previous item in Certificate">
+              Previous</button
+            ><button type="button" data-direction="1" aria-label="Next item in Certificate">
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="track" tabindex="0" role="region" aria-label="Slider Certificate">
+          <article class="card certificate-card">
+            <button class="certificate-zoom" type="button" aria-label="Enlarge Azure AI certificate image"><img
+              src="./assets/AzureAi.png"
+              alt="Microsoft Elevate AI Training Session certificate awarded to Rakha Adinata Zavier"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            /></button>
+            <div class="card-caption">
+              <h3>Azure AI Certification</h3>
+              <p>
+                To strengthen my technical foundation in artificial intelligence, I completed the Microsoft Elevate AI Training Session covering Azure AI Fundamentals. This 15-hour program, jointly organized by Microsoft, BINUS University, and GreatNusa, provided me with the Microsoft AI Skills credential and practical knowledge of core AI concepts from the ground up.
+              </p>
+              <div class="publication-actions"><button class="certificate-enlarge" type="button">Enlarge image</button><a class="publication-link" href="assets/Certificate_Azure_AI.pdf" download>Download certificate</a></div>
+            </div>
+          </article>
+          <article class="card certificate-card">
+            <button class="certificate-zoom" type="button" aria-label="Enlarge ICISS presenter certificate image"><img
+              src="./assets/ICISS_Certificate.png"
+              alt="ICISS 2026 certificate of appreciation recognizing Rakha Adinata Zavier as a presenter"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            /></button>
+            <div class="card-caption">
+              <h3>ICISS Presenter Certificate</h3>
+              <p>
+                As a prerequisite for our paper's publication, I had the honor of representing my research team at the ICISS 2026 conference. I presented our research paper, titled "Comparative Evaluation of Precision and Relevance in Traditional, Graph, and LLM-Prompted Recommender Models," and actively addressed inquiries during the Q&A session. This presentation was a crucial milestone that led to the successful publication of our work.
+              </p>
+              <div class="publication-actions"><button class="certificate-enlarge" type="button">Enlarge image</button><a class="publication-link" href="assets/ICISS 2026_Presenter_Certificate_RakhaAdinataZavier.pdf" download>Download certificate</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <dialog class="certificate-lightbox" aria-label="Enlarged certificate">
+        <button class="certificate-lightbox-close" type="button" aria-label="Close enlarged image">×</button>
+        <img alt="" />
+      </dialog>
+      <section id="publication" class="section slider reveal" aria-labelledby="publication-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="publication-title">Publication</h2>
+            <p>Swipe to explore. Enlarge an image or open the publication link.</p>
+          </div>
+          <div class="slider-controls">
+            <button type="button" data-direction="-1" aria-label="Previous item in Publication">
+              Previous</button
+            ><button type="button" data-direction="1" aria-label="Next item in Publication">
+              Next
+            </button>
+          </div>
+        </div>
+        <div class="track" tabindex="0" role="region" aria-label="Slider Publication">
+          <article class="card publication-card">
+            <button class="publication-zoom" type="button" aria-label="Enlarge IEEE Xplore publication screenshot"><img
+              src="assets/ICISS_Publication.png"
+              alt="IEEE Xplore page for the ICISS 2026 recommender models paper"
+              loading="lazy"
+              width="1400"
+              height="933"
+              draggable="false"
+            /></button>
+            <div class="card-caption">
+              <h3>ICISS 2026 - IEEE Publication</h3>
+              <p>
+                I served as a co-author and presenter for our research paper titled "Comparative Evaluation of Precision and Relevance in Traditional, Graph, and LLM-Prompted Recommender Models." In this study, my team and I evaluated five different recommender models to determine whether assessing them requires a combination of accuracy and relevance metrics, or if one is sufficient to enhance the user experience. We concluded that evaluating recommender models necessitates both metric types to strike a balance between mathematical accuracy and real-world user satisfaction. This paper was presented at the ICISS 2026 conference and officially published in IEEE. To read the full paper, please click the button below.
+              </p>
+              <div class="publication-actions"><button class="publication-enlarge" type="button">Enlarge image</button><a class="publication-link" href="https://ieeexplore.ieee.org/document/11715414">Open publication</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="section contact reveal">
+        <h2>Contact me</h2>
+        <p>Open to work! If you're interested, please contact me</p>
+        <ul class="social-grid">
+          <li>
+            <a
+              class="social"
+              style="--c: #669782"
+              href="https://wa.me/6285855550088"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp: +62 858-5555-0088"
+            >
+              <span class="social-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  /></svg
+              ></span>
+              <span class="social-text"
+                ><strong>WhatsApp</strong><small>+62 858-5555-0088</small></span
+              >
+              <span class="social-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social"
+              style="--c: #e2593b"
+              href="mailto:rakhaadinata19@gmail.com"
+              aria-label="Email: rakhaadinata19@gmail.com"
+            >
+              <span class="social-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                  /></svg
+              ></span>
+              <span class="social-text"
+                ><strong>Email</strong><small>rakhaadinata19@gmail.com</small></span
+              >
+              <span class="social-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social"
+              style="--c: #dcc57c"
+              href="https://www.linkedin.com/in/rakha-adinata-zavier"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn: rakha-adinata-zavier"
+            >
+              <span class="social-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  /></svg
+              ></span>
+              <span class="social-text"
+                ><strong>LinkedIn</strong><small>rakha-adinata-zavier</small></span
+              >
+              <span class="social-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social"
+              style="--c: #b5bbbe"
+              href="https://github.com/RakhaZvy"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub: @RakhaZvy"
+            >
+              <span class="social-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  /></svg
+              ></span>
+              <span class="social-text"><strong>GitHub - University</strong><small>@RakhaZvy</small></span>
+              <span class="social-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social"
+              style="--c: #b5bbbe"
+              href="https://github.com/rakhaAZnvy"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub: @rakhaAZnvy"
+            >
+              <span class="social-icon"
+                ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  /></svg
+              ></span>
+              <span class="social-text"><strong>GitHub - Personal</strong><small>@rakhaAZnvy</small></span>
+              <span class="social-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="container footer">© 2026 Rakha Adinata Zavier</footer>
+  </body>
+</html>

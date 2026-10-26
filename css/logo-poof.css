@@ -1,0 +1,153 @@
+.logo-poof-hint {
+  position: fixed;
+  z-index: 90;
+  right: 20px;
+  bottom: 18px;
+  padding: 8px 13px;
+  border: 1px solid #3f3d3a;
+  border-radius: 999px;
+  background: #2a282bef;
+  color: #b5bbbe;
+  font: 12px/1.3 Arial, Helvetica, sans-serif;
+  pointer-events: none;
+  opacity: 0.72;
+}
+.logo-poof-hint::before {
+  content: "✦";
+  margin-right: 7px;
+  color: #e2593b;
+}
+.logo-poof {
+  position: fixed;
+  z-index: 100;
+  width: 92px;
+  height: 92px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: logo-flight var(--flight-time) cubic-bezier(0.42, 0, 0.58, 1) forwards;
+  will-change: transform, opacity;
+}
+.logo-poof img {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 14px rgba(226, 89, 59, 0.62));
+  animation: logo-spin var(--flight-time) linear forwards;
+}
+.logo-poof-ring {
+  position: absolute;
+  z-index: 0;
+  inset: 18%;
+  border: 3px solid rgba(255, 194, 116, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 0 18px rgba(226, 89, 59, 0.65);
+  animation: ring-burst 560ms ease-out forwards;
+}
+.logo-poof-smoke {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(246, 239, 229, 0.8), rgba(195, 187, 184, 0.48) 48%, rgba(226, 89, 59, 0.2) 70%, transparent 78%);
+  filter: blur(6px);
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.2);
+  animation: smoke-poof 980ms ease-out var(--smoke-delay) forwards;
+}
+.logo-poof-spark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 15px;
+  background: linear-gradient(#fff2bb, #f08a48);
+  clip-path: polygon(50% 0, 66% 36%, 100% 50%, 65% 64%, 50% 100%, 35% 64%, 0 50%, 35% 36%);
+  filter: drop-shadow(0 0 5px #f08a48);
+  opacity: 0;
+  animation: spark-burst 720ms ease-out var(--spark-delay) forwards;
+}
+@keyframes logo-flight {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  19% {
+    opacity: 1;
+    transform: translate(calc(-50% + var(--dx-short)), calc(-50% + var(--dy-short))) scale(1);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(0.58);
+  }
+}
+@keyframes logo-spin {
+  0% {
+    transform: scale(0.15) rotate(-35deg);
+  }
+  9% {
+    transform: scale(1.28) rotate(130deg);
+  }
+  16% {
+    transform: scale(0.96) rotate(245deg);
+  }
+  21% {
+    transform: scale(1) rotate(360deg);
+  }
+  100% {
+    transform: scale(0.5) rotate(var(--spin));
+  }
+}
+@keyframes ring-burst {
+  0% {
+    opacity: 1;
+    transform: scale(0.25);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.6);
+  }
+}
+@keyframes smoke-poof {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+  22% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--smoke-x)), calc(-50% + var(--smoke-y))) scale(var(--smoke-size));
+  }
+}
+@keyframes spark-burst {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2) rotate(0);
+  }
+  18% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--spark-x)), calc(-50% + var(--spark-y))) scale(0.35) rotate(240deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-poof,
+  .logo-poof-hint {
+    display: none;
+  }
+}

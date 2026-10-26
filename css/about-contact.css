@@ -1,0 +1,230 @@
+/* About me (dari CV) + Contact dengan ikon sosial media */
+
+/* ---------- About ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 48px;
+  align-items: start;
+}
+.about-copy {
+  display: grid;
+  gap: 20px;
+}
+.about-lead {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--text);
+}
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.about-stats li {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s;
+}
+.about-stats li:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+.about-stats strong {
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+}
+.about-stats span {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+.about-side {
+  display: grid;
+  gap: 16px;
+}
+.about-card {
+  display: grid;
+  gap: 8px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+}
+.about-card-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.about-card h3 {
+  font-size: 22px;
+}
+.about-courses {
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+.chip-group {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+.chip-title {
+  font-size: 12px;
+  color: var(--muted);
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.chips li {
+  padding: 6px 12px;
+  border: 1px solid color-mix(in srgb, var(--c) 55%, transparent);
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--c) 12%, transparent);
+  color: var(--text);
+  font-size: 13px;
+  transition:
+    background 0.25s,
+    color 0.25s,
+    transform 0.25s;
+}
+.chips li:hover {
+  background: var(--c);
+  color: var(--bg);
+  transform: translateY(-2px);
+}
+
+/* ---------- Contact ---------- */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s,
+    box-shadow 0.35s;
+}
+.social:hover,
+.social:focus-visible {
+  transform: translateY(-5px);
+  border-color: var(--c);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--c) 28%, transparent);
+}
+.social-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--c) 16%, transparent);
+  color: var(--c);
+  transition:
+    background 0.3s,
+    color 0.3s,
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.social-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+}
+.social:hover .social-icon {
+  background: var(--c);
+  color: var(--bg);
+  transform: rotate(-8deg) scale(1.06);
+}
+.social-text {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+.social-text strong {
+  font-size: 17px;
+  font-weight: 600;
+}
+.social-text small {
+  font-size: 13px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.social-arrow {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 20px;
+  transition:
+    transform 0.3s,
+    color 0.3s;
+}
+.social:hover .social-arrow {
+  color: var(--c);
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 1000px) {
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .about-lead {
+    font-size: 19px;
+  }
+  .about-stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .about-stats li {
+    grid-template-columns: 92px minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+  }
+  .social-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-stats li:hover,
+  .chips li:hover,
+  .social:hover,
+  .social:hover .social-icon,
+  .social:hover .social-arrow {
+    transform: none;
+  }
+}

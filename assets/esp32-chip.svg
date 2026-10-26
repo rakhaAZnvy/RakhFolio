@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title">
+  <title id="title">ESP32 microcontroller</title>
+  <g fill="none" stroke="#e7352a" stroke-linecap="round" stroke-width="4">
+    <path d="M22 12v10m18-10v10m18-10v10M22 58v10m18-10v10m18-10v10M12 22h10m-10 18h10m-10 18h10m36-36h10m-10 18h10m-10 18h10"/>
+  </g>
+  <rect x="18" y="18" width="44" height="44" rx="8" fill="#e7352a"/>
+  <rect x="25" y="25" width="30" height="30" rx="4" fill="#fff"/>
+  <text x="40" y="44" fill="#e7352a" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" text-anchor="middle">32</text>
+</svg>

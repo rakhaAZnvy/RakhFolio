@@ -1,0 +1,26 @@
+.brand-typed-name {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  font-style: normal;
+  white-space: nowrap;
+}
+.brand-typed-content {
+  display: block;
+  overflow: hidden;
+  height: 1.25em;
+  border-right: 2px solid var(--accent);
+  font-weight: inherit;
+  white-space: nowrap;
+  animation: brand-caret 0.75s steps(1, end) infinite;
+}
+@keyframes brand-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand-typed-content {
+    animation: none;
+  }
+}

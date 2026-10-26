@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="CheckShop compares machine learning models for sentiment analysis of English online shop reviews."
+    />
+    <meta name="theme-color" content="#1b1a20" />
+    <link rel="icon" type="image/png" href="../assets/favicon.png" sizes="512x512" />
+    <title>CheckShop</title>
+    <link rel="stylesheet" href="../css/project/CheckShop.css" />
+    <link rel="stylesheet" href="../css/grid-bg.css" />
+    <link rel="stylesheet" href="../css/detail.css" />
+    <link rel="stylesheet" href="../css/brand-typing.css" />
+    <script src="../js/project/CheckShop.js" defer></script>
+    <script src="../js/detail.js" defer></script>
+    <script src="../js/brand-typing.js" defer></script>
+      <link rel="stylesheet" href="../css/logo-poof.css" />
+    <script src="../js/logo-poof.js" defer></script>
+      <script src="../js/neural-bg.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="../index.html">Rakha Adinata Zavier<span>.</span></a>
+        <div class="nav-links">
+          <a href="../index.html#about">About me</a><a href="../index.html#project">Project</a
+          ><a href="../index.html#organization">Organization Experience</a
+          ><a href="../index.html#certificate">Certificate</a
+          ><a href="../index.html#publication">Publication</a
+          ><a href="../index.html#contact">Contact me</a>
+        </div>
+      </nav>
+    </header>
+    <main class="dt">
+      <div class="dt-progress" aria-hidden="true"><span></span></div>
+
+      <section class="dt-hero">
+        <div class="container main-menu-top">
+          <a class="button main-menu-button" href="../index.html">← Main Menu</a>
+        </div>
+
+        <div class="dt-hero-media">
+          <img
+            class="dt-cover"
+            src="../assets/CheckShop.png"
+            alt="CheckShop sentiment analysis dashboard showing model predictions and comparison charts"
+            width="1400"
+            height="933"
+          />
+        </div>
+        <div class="dt-hero-inner container">
+          <nav class="dt-crumbs" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a><span aria-hidden="true">/</span>
+            <a href="../index.html#project">Project</a><span aria-hidden="true">/</span>
+            <span aria-current="page">CheckShop</span>
+          </nav>
+          <span class="dt-chip">Project · Natural Language Processing</span>
+          <h1>CheckShop</h1>
+          <p class="dt-lead">
+            CheckShop is a Streamlit app for analyzing English online shop reviews. It compares
+            Logistic Regression, Naive Bayes, XGBoost, and fine-tuned BERT; BERT achieved the
+            highest macro F1-score in the evaluation, at 94.4%.
+          </p>
+          <div class="dt-actions">
+            <a
+              class="dt-link"
+              href="https://drive.google.com/drive/folders/1fWnEpQpmfqjUN8kfJDQbqeZCjxBnkPIL?usp=sharing"
+              rel="noopener noreferrer"
+              target="_blank"
+              >View the Report ↗</a
+              ><a
+              class="dt-link"
+              href="https://checkshopapplications.streamlit.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >View Site ↗</a
+            >
+            
+            <button class="dt-zoom" type="button">⤢ Enlarge image</button>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="dt-meta container" aria-label="Summary">
+        <div class="dt-meta-grid">
+          <div class="dt-meta-card">
+            <span class="dt-meta-label">Role</span>
+            <span class="dt-meta-value">Project Manager, Frontend Developer, Quality Assurance, Data Analyst, AI Engineer, Delivery</span>
+          </div>
+          <div class="dt-meta-card">
+            <span class="dt-meta-label">Period</span>
+            <span class="dt-meta-value">February - June 2026</span>
+          </div>
+          <div class="dt-meta-card">
+            <span class="dt-meta-label">Tech stack</span>
+            <div class="lokalloop-tech-logos checkshop-tech-logos" aria-label="Tech stack">
+              <div class="lokalloop-tech-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" width="42" height="42" />
+                <span>Python</span>
+              </div>
+              <div class="lokalloop-tech-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" alt="" width="42" height="42" />
+                <span>Streamlit</span>
+              </div>
+              <div class="lokalloop-tech-logo">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="" width="42" height="42" />
+                <span>scikit-learn</span>
+              </div>
+              <div class="lokalloop-tech-logo">
+                <span class="checkshop-tech-mark checkshop-xgboost-mark" aria-hidden="true">X</span>
+                <span>XGBoost</span>
+              </div>
+              <div class="lokalloop-tech-logo">
+                <span class="checkshop-tech-mark">BERT</span>
+              </div>
+            </div>
+          </div>
+          <div class="dt-meta-card">
+            <span class="dt-meta-label">Course Project</span>
+            <span class="dt-meta-value">Natural Language Processing</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="dt-layout container">
+        <article class="dt-article">
+          <section id="bagian-1" class="dt-sec reveal">
+            <span class="dt-num" aria-hidden="true">01</span>
+            <h2>Overview</h2>
+            <p>
+              CheckShop helps sellers understand customer feedback without reading every review manually. The models 
+              were trained on the BanglaEcomReviewCorpus dataset, using the English translations of its reviews. After 
+              cleaning, it contains about 8,587 reviews labeled positive, negative, or neutral. A user types a review, 
+              and the app returns the predicted sentiment from all four models at once.
+            </p>
+          </section>
+          <section class="dt-sec dt-cards reveal" id="bagian-2">
+            <span aria-hidden="true" class="dt-num">02</span>
+            <h2>What it does</h2>
+            <ul class="dt-points">
+              <li>
+                <strong>Multi-model prediction</strong>
+                <span>Enter an English shop review to get a sentiment prediction.</span>
+              </li>
+              <li>
+                <strong>Probability charts</strong>
+                <span>Each model shows a probability bar chart for the three classes, plus a combined probability table.</span>
+              </li>
+              <li>
+                <strong>Compare four models</strong>
+                <span>Review predictions from Logistic Regression, Naive Bayes, XGBoost, and BERT.</span>
+              </li>
+              <li>
+                <strong>View model performance</strong>
+                <span>BERT achieved a macro F1-score of 94.4% in the reported evaluation.</span>
+              </li>
+            </ul>
+          </section>
+          <section class="dt-sec dt-cards reveal" id="bagian-3">
+            <span aria-hidden="true" class="dt-num">03</span>
+            <h2>My role</h2>
+            <ul class="dt-points">
+              <li>
+                <strong>Project manager</strong
+                ><span
+                  >Planning, team management, monitoring progress and performance, and quality
+                  control.</span
+                >
+              </li>
+              <li>
+                <strong>Quality Assurance</strong
+                ><span
+                  >Tested the application and checked that its review analysis and model comparison worked as intended.</span
+                >
+              </li>
+              <li>
+                <strong>Front-end developer</strong
+                  ><span>Built the Streamlit interface and fixed front-end issues.</span>
+              </li>
+              <li>
+                <strong>Data Analyst</strong
+                ><span
+                  >Finding the data from open space, analysist and visualize the data, and preprocessing the data based on what the results from the analysis me and my team do.</span
+                >
+              </li>
+              <li>
+                <strong>AI Engineer</strong
+                ><span
+                  >.</span
+                >
+              </li>
+              <li>
+                <strong>Delivery</strong
+                ><span
+                  >Contributed to the project report and prepared the app for release such as pushing to github, and deploy it.</span
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="dt-sec reveal" id="bagian-4">
+            <span aria-hidden="true" class="dt-num">04</span>
+            <h2>Challenges and learnings</h2>
+            <p>
+              Comparing the four classifiers required consistent evaluation across models. BERT
+              produced the strongest result in this study, with a macro F1-score of 94.4%. The
+              project gave me experience building an NLP workflow and presenting its results.
+            </p>
+          </section>
+          <a class="button dt-back" href="../index.html#project">← Back to Project</a>
+        </article>
+        <aside class="dt-aside">
+          <nav aria-label="On this page" class="dt-toc">
+            <p class="dt-toc-title">On this page</p>
+            <ol>
+              <li><a href="#bagian-1">Overview</a></li>
+              <li><a href="#bagian-2">What it does</a></li>
+              <li><a href="#bagian-3">My role</a></li>
+              <li><a href="#bagian-4">Challenges and learnings</a></li>
+            </ol>
+          </nav>
+        </aside>
+      </div>
+      <section aria-labelledby="lihat-juga" class="dt-related container">
+        <div class="dt-related-head">
+          <h2 id="lihat-juga">See also</h2>
+          <a href="../index.html#project">All Project →</a>
+        </div>
+        <div class="dt-related-grid">
+          <a class="dt-related-card" href="../project/LokalLoop.html"
+            ><div class="dt-related-thumb">
+              <img
+                alt=""
+                height="450"
+                loading="lazy"
+                src="../assets/LokalLoop.png"
+                width="800"
+              />
+            </div>
+            <div class="dt-related-body">
+              <h3>SorTrash</h3>
+              <span aria-hidden="true" class="dt-arrow">→</span>
+            </div></a
+          ><a class="dt-related-card" href="../project/SorTrash.html"
+            ><div class="dt-related-thumb">
+              <img
+                alt=""
+                height="450"
+                loading="lazy"
+                src="../assets/SorTrash.png"
+                width="800"
+              />
+            </div>
+            <div class="dt-related-body">
+              <h3>VisioAttend</h3>
+              <span aria-hidden="true" class="dt-arrow">→</span>
+            </div></a
+          >
+        </div>
+      </section>
+      <dialog aria-label="Enlarged image" class="dt-lightbox">
+        <button class="dt-lightbox-close" type="button">Close ✕</button>
+        <img
+          alt="CheckShop sentiment analysis dashboard showing model predictions and comparison charts"
+          src="../assets/CheckShop.png"
+        />
+      </dialog>
+    </main>
+    <footer class="container footer">
+      © 2026 Rakha Adinata Zavier.
+    </footer>
+  </body>
+</html>
